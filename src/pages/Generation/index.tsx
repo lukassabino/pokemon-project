@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { useRouteMatch, Link } from 'react-router-dom';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { FiChevronLeft } from 'react-icons/fi';
 import api from '../../services/api';
  
 import { Header, GenerationInfo, Pokemons } from './styles';
-import logoImg from '../../assets/pokebola.png';
+import logoImg from '../../assets/pokebola_red.png';
 
 interface GenerationParams {
     generation: string;
 }
 
-interface PokemonInfo {
+interface PokemonSpecies {
     name:string;
 }
 
@@ -23,7 +23,7 @@ interface MovesInfo {
 }
 
 const Generation: React.FC = () => {
-    const [pokemons, setPokemons] = useState<PokemonInfo[]>([]);
+    const [pokemons, setPokemons] = useState<PokemonSpecies[]>([]);
     const [abilities, setAbilities] = useState<AbilitiesInfo[]>([]);
     const [moves, setMoves] = useState<MovesInfo[]>([]);
     const { params } = useRouteMatch<GenerationParams>();
@@ -49,7 +49,6 @@ const Generation: React.FC = () => {
                     <img src={logoImg} alt="pokebola"/>
                     <div>
                         <strong>{params.generation}</strong>
-                        <p>Geração</p>
                     </div>
                 </header>
                 <ul>
@@ -69,13 +68,9 @@ const Generation: React.FC = () => {
             </GenerationInfo>
             <Pokemons>
                 {pokemons.map((pokemon, index) => (
-                    <Link key={index} to="dasd">
-                        <div>
-                            <strong>{pokemon.name}</strong>
-                            <p>dasdsad</p>
-                        </div>
-                        <FiChevronRight size={20} />
-                    </Link>
+                    <div key={index} >
+                        <strong>{pokemon.name}</strong>
+                    </div>
                 ))}
             </Pokemons>
         </>

@@ -11,11 +11,15 @@ export const Header = styled.header`
         text-decoration: none;
         color: #3d3d4d;
         transition: color 0.2s;
+        background: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100px;
+        display: block;
 
         &:hover {
             color: #666;
             transform: translateX(2px);
-
         }
 
         svg {
@@ -30,7 +34,7 @@ export const Logo = styled.img`
 `;
 
 export const GenerationInfo = styled.section`
-    margin-top: 80px;
+    margin-top: 30px;
 
     header {
         display: flex;
@@ -48,6 +52,7 @@ export const GenerationInfo = styled.section`
             strong {
                 font-size: 36px;
                 color: #3d3d4d;
+                text-transform: capitalize;
             }
 
             p {
@@ -65,6 +70,13 @@ export const GenerationInfo = styled.section`
 
         li {
 
+            div {
+                padding: 20px;
+                background-color: white;
+                border-radius: 5px;
+                margin-left: 65px;
+            }
+
             & + li {
                 margin-left: 80px;
             }
@@ -72,7 +84,6 @@ export const GenerationInfo = styled.section`
             strong {
                 display: block;
                 font-size: 36px;
-
                 color: #3d3d4d;
             }
 
@@ -86,47 +97,21 @@ export const GenerationInfo = styled.section`
 `;
 
 export const Pokemons = styled.div`
-    margin-top: 80px;
+    margin-top: 50px;
 
-    a {
+    div {
         background: #fff;
         border-radius: 5px;
-        width: 100%;
-        padding: 24px;
-        display: block;
+        margin-right: 19px;
+        margin-bottom: 19px;
+        width: 20%;
+        padding: 28px;
         text-decoration: none;
-
-        display: flex;
-        align-items: center;
-        transition: transform 0.2s;
-
-        &:hover {
-            transform: translateX(10px);
-        }
-
-        & + a {
-            margin-top: 16px;
-        }
-
-        div {
-            margin-left: 16px;
-
-            strong {
+        float: left;
+        strong {
                 font-size: 20px;
                 color: #3D3D4D;
+                text-transform: capitalize;
             }
-
-            p {
-                font-size: 18px;
-                color: #A8A8B3;
-                margin-top: 4px;
-            }
-        }
-
-        svg {
-            margin-left: auto;
-            color: #A8A8B3;
-        }
     }
-
 `;

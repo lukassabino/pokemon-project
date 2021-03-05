@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import pokemonBackground from '../assets/pikachu.jpg';
+import pokemonBackground from '../assets/pokebola3d.png';
 
 export default createGlobalStyle`
     * {
@@ -11,12 +11,13 @@ export default createGlobalStyle`
     }
 
     body {
-        background: #F0F0F5 url(${pokemonBackground}) no-repeat 78% top;
+        background: #F0F0F5 url(${pokemonBackground}) no-repeat 100% top;
         -webkit-font-smoothing: antialiased;
+        background-size: 40%;
     }
 
     body, input, button {
-        font: 16px sans-serif;
+        font: 16px Roboto, sans-serif;
     }
 
     #root {

@@ -1,53 +1,17 @@
 import styled from 'styled-components';
-import { shade } from 'polished';
 
 export const Title = styled.h1`
-    font-size: 48px;
-    color: #3A3A3A;
-
-    max-width: 660px;
-    line-height: 56px;
-    margin-top: 80px;
+    font-size: 50px;
+    color: #3d3d4d;
+    max-width: 890px;
+    height: 100%;
+    line-height: 16px;
+    padding: 30px;
 `;
 
 export const Logo = styled.img`
     width: 100px;
     height: 100px;
-`;
-
-export const Form = styled.form`
-    margin-top: 40px;
-    max-width: 700px;
-
-    display: flex;
-
-    input {
-        flex: 1;
-        height: 70px;
-        padding: 0 24px;
-        border: 0;
-        border-radius: 5px 0 0 5px;
-        color: #3A3A3A;
-
-        &::placeholder {
-            color: #a8a8b3;
-        }
-    }
-
-    button {
-        width: 210px;
-        height: 70px;
-        background: #04D361;
-        border-radius: 0px 5px 5px 0px;
-        border: 0;
-        color: #FFF;
-        font-weight: bold;
-        transition: background-color 0.2s;
-
-        &:hover {
-            background: ${shade(0.2, '#04D361')}
-        }
-    }
 `;
 
 export const Generations = styled.div`
@@ -61,7 +25,6 @@ export const Generations = styled.div`
         padding: 24px;
         display: block;
         text-decoration: none;
-
         display: flex;
         align-items: center;
         transition: transform 0.2s;
@@ -86,6 +49,7 @@ export const Generations = styled.div`
             strong {
                 font-size: 20px;
                 color: #3D3D4D;
+                text-transform: capitalize;
             }
 
             p {
@@ -100,5 +64,4 @@ export const Generations = styled.div`
             color: #A8A8B3;
         }
     }
-
 `;
