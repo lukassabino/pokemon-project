@@ -1,29 +1,40 @@
 # Pokemon Project
 
- Para instalar o projeto realizar o comando abaixo no diretorio do mesmo
+## Objetivo
+ Este projeto tem como objetivo disponibilizar as gerações dos games do Pokemon, bem como os respectivos Pokemons de cada geração.
 
+## Pré-Requisitos
+### NodeJS
 ### yarn
 
- Esse comando instalará todas as dependencias do projeto
+## Utilizados
+### NodeJS LTS v14.16.0
+### yarn v1.22.10
 
- Logo após, rodar
+## Instalação e Informações
 
-### yarn start
+ Após realizar o clone do projeto, rodar o comando abaixo para instalação das dependencias.
+ ### yarn
 
-O projeto irá rodar no localhost utilizando a porta 3000 
+ Para a execução, executar o seguinte
+ ### yarn start
 
-## NodeJS LTS v14.16.0
-## yarn v1.22.10
+ ### O site executará no endereço localhost utilizando a porta 3000 
 
-# Componentes Utilizados
+## API de consulta
+### https://pokeapi.co/
 
-## react-router-dom
-## styled-components
-## react-icons
-## axios
-## babel
-## babel-loader
-## webpack-dev-server
-## style-loader 
-## css-loader
-## file-loader
+## Tecnologia
+### ReactJS
+
+## Bibliotecas 
+### react-router-dom
+### styled-components
+### react-icons
+### axios
+### babel
+### babel-loader
+### webpack-dev-server
+### style-loader 
+### css-loader
+### file-loader
