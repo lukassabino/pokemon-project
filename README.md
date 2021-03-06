@@ -15,15 +15,15 @@ O projeto irá rodar no localhost utilizando a porta 3000
 ## NodeJS LTS v14.16.0
 ## yarn v1.22.10
 
-Componentes Utilizados
+# Componentes Utilizados
 
-# react-router-dom
-# styled-components
-# react-icons
-# axios
-# babel
-# babel-loader
-# webpack-dev-server
-# style-loader 
-# css-loader
-# file-loader
+## react-router-dom
+## styled-components
+## react-icons
+## axios
+## babel
+## babel-loader
+## webpack-dev-server
+## style-loader 
+## css-loader
+## file-loader
