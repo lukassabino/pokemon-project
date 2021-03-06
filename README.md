@@ -9,6 +9,7 @@
 
 ## Utilizados
  NodeJS LTS v14.16.0
+ 
  yarn v1.22.10
 
 ## Instalação e Informações
